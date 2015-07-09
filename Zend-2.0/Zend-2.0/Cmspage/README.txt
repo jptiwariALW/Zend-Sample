@@ -1,21 +1,18 @@
-====================================================================================
-====================================================================================
-================= Read below to get better understanding of module =================
-====================================================================================
-====================================================================================
-
-MODULE NAME : CMS page management in Admin section
+#Read below to get better understanding of module 
 
 
-PURPOSE : The main purpose of this module is to manage the CMS or static pages on the site in Admin section. Admin can add, edit or delete the created pages and can modify the status (enable or disable) of pages. Please include link in your admin layout file before running this module. Below is the sample code:
+##MODULE NAME : CMS page management in Admin section
+
+
+* PURPOSE : The main purpose of this module is to manage the CMS or static pages on the site in Admin section. Admin can add, edit or delete the created pages and can modify the status (enable or disable) of pages. Please include link in your admin layout file before running this module. Below is the sample code:
 
 <a href="<?php echo $this->url('cmspage', array('action' => 'index')); ?>" class="list-group-item <?php if($controllerName=='Cmspage\Controller\Cmspage'){ echo 'active'; }?>"><?php echo $this->translate('Manage CMS Page'); ?></a>
 
 
-TECHNOLOGY AND FRAMEWORK : PHP, Zend 2.0 Framework
+##TECHNOLOGY AND FRAMEWORK : PHP, Zend 2.0 Framework
 
 
-FUNCTIONAL DESCRIPTION OF MODULE: This package is designed by considering the basic structure of Zend 2.0. It includes all required and necessary scripts to achieve the goal. Following is the brief description of files used in this module:
+* FUNCTIONAL DESCRIPTION OF MODULE: This package is designed by considering the basic structure of Zend 2.0. It includes all required and necessary scripts to achieve the goal. Following is the brief description of files used in this module:
 
     1: /Module.php: Initializes the module. It includes the initialization of required services for the proper flow of data like Javascript, CSS, Models, Helpers, Table creation etc.
     
